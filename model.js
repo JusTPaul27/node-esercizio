@@ -1,11 +1,13 @@
 class Student {
 
     static GENDER ={
-        male:'maschio',
-        female: 'femmina',
+        male:'maschile',
+        female: 'femminile',
         undefined: 'not defined'
     }
-
+    static createStudentFromObject(obj){
+        return new Student(obj.name, obj.surname, obj.gender, obj.yob)
+    }
     constructor(name, surname, gender, yob){
         this.name = name;
         this.surname = surname;
@@ -24,3 +26,6 @@ class Student {
         return studentString;
     }
 }
+
+exports.Student = Student;
+
