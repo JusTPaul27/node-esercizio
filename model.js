@@ -21,6 +21,6 @@ class Student {
                                'Genere: ' + this.gender + '\n' +
                                'Età: ' + (new Date().getFullYear() - this.yob) + '\n';
 
-        return 
+        return studentString;
     }
 }
